@@ -1,0 +1,18 @@
+@use "../helpers";
+
+#about{
+    background-color: var(--white);
+
+    h3{
+        color: var(--NightBlue);
+        font-weight: 600;
+        font-size: helpers.rem-calc(24);
+        line-height: helpers.rem-calc(34);
+    }
+    p{
+        color: var(--Grey);
+        font-weight: 600;
+        font-size: helpers.rem-calc(16);
+        line-height: helpers.rem-calc(28);
+    }
+}

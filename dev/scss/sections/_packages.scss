@@ -3,9 +3,9 @@
 #packages{
     background-color: var(--LilyWhite);
 
-    h1{
-        color: var(--NightBlue);
-    }
+    // h1{
+    //     color: var(--NightBlue);
+    // }
 
     #package-button-container{
         background-color: var(--white);
@@ -23,14 +23,23 @@
 
             p{
                 color: var(--NightBlue);
+                font-weight: 600;
+                font-size: helpers.rem-calc(20);
+                line-height: helpers.rem-calc(28);
             }
 
             h4{
                 color: var(--Grey);
+                font-weight: 600;
+                font-size: helpers.rem-calc(14);
+                line-height: helpers.rem-calc(28);
             }
 
             h3{
                 color: var(--Aqua);
+                font-weight: 600;
+                font-size: helpers.rem-calc(14);
+                line-height: helpers.rem-calc(28);
             }
 
         }

@@ -1,0 +1,13 @@
+@use "../helpers";
+
+#communications{
+
+    background-color: var(--white);
+
+    p{
+        color: var(--Grey);
+        font-weight: 600;
+        font-size: helpers.rem-calc(16);
+        line-height: helpers.rem-calc(28);
+    }
+}

@@ -338,9 +338,23 @@ html {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title {
+  color: var(--NightBlue);
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+}
+
 /* =============
     Buttons
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -373,15 +387,16 @@ textarea {
 #hero {
   background-color: var(--LilyWhite);
 }
-#hero section article h1 {
-  color: var(--NightBlue);
-}
 #hero section article p {
   color: var(--Grey);
+  font-weight: 600;
+  line-height: 1.75rem;
 }
 #hero section article a:link, #hero section article a:visited {
   background-color: var(--NightBlue);
   color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 #hero section article button {
   background-color: var(--white);
@@ -391,13 +406,17 @@ textarea {
 }
 #hero section #hero-card h5 {
   color: var(--NightBlue);
+  font-weight: 600;
+  line-size: 0.875rem;
+}
+#hero section #hero-card p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
 
 #packages {
   background-color: var(--LilyWhite);
-}
-#packages h1 {
-  color: var(--NightBlue);
 }
 #packages #package-button-container {
   background-color: var(--white);
@@ -411,12 +430,21 @@ textarea {
 }
 #packages #package-card-container .package-card p {
   color: var(--NightBlue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 #packages #package-card-container .package-card h4 {
   color: var(--Grey);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
 }
 #packages #package-card-container .package-card h3 {
   color: var(--Aqua);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
 }
 #packages #package-card-container .selected {
   background-color: var(--white);
@@ -425,18 +453,62 @@ textarea {
 #newsletter {
   background-color: var(--LilyWhite);
 }
-#newsletter h1 {
-  color: var(--NightBlue);
-}
 #newsletter p {
   color: var(--Grey);
+  font-weight: 600;
+  line-height: 1.75rem;
 }
 #newsletter form input {
   border: none;
   color: var(--Grey);
+  font-weight: 600;
 }
 #newsletter form button {
   border: none;
   background-color: var(--NightBlue);
   color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+#communications {
+  background-color: var(--white);
+}
+#communications p {
+  color: var(--Grey);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+#process {
+  background-color: var(--white);
+}
+#process h3 {
+  color: var(--NightBlue);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+}
+#process p {
+  color: var(--Grey);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+#about {
+  background-color: var(--white);
+}
+#about h3 {
+  color: var(--NightBlue);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+}
+#about p {
+  color: var(--Grey);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
