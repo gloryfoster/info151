@@ -1,0 +1,39 @@
+@use "../helpers";
+
+#hero{
+    background-color: var(--LilyWhite);
+
+    section{
+
+        article{
+            h1{
+                color: var(--NightBlue);
+            }
+
+            p{
+                color: var(--Grey);
+            }
+
+            a:link, a:visited{
+                background-color: var(--NightBlue);
+                color: var(--white);
+            }
+            a:hover, a:focus{
+
+            }
+
+            button{
+                background-color: var(--white);
+            }
+        }
+
+        #hero-card{
+            background-color: var(--Snowdrop);
+            h5{
+                color: var(--NightBlue);
+            }
+        }
+
+    }
+}
+

@@ -316,6 +316,13 @@ template {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --GhostWhite: #F0FAFF;
+  --LilyWhite: #ECF9FF;
+  --Snowdrop: #F9FDFF;
+  --Aqua: #00E5CC;
+  --NightBlue: #060640;
+  --Grey: #9090A7;
+  --Jaguar: #000020;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -324,6 +331,10 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+.img-scaler {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -359,3 +370,25 @@ textarea {
 /* =============
     Footer
 ============= */
+#hero {
+  background-color: var(--LilyWhite);
+}
+#hero section article h1 {
+  color: var(--NightBlue);
+}
+#hero section article p {
+  color: var(--Grey);
+}
+#hero section article a:link, #hero section article a:visited {
+  background-color: var(--NightBlue);
+  color: var(--white);
+}
+#hero section article button {
+  background-color: var(--white);
+}
+#hero section #hero-card {
+  background-color: var(--Snowdrop);
+}
+#hero section #hero-card h5 {
+  color: var(--NightBlue);
+}
