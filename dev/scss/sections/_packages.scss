@@ -1,0 +1,42 @@
+@use "../helpers";
+
+#packages{
+    background-color: var(--LilyWhite);
+
+    h1{
+        color: var(--NightBlue);
+    }
+
+    #package-button-container{
+        background-color: var(--white);
+
+        button{
+            border: none;
+        }
+
+    }
+
+    #package-card-container{
+        .package-card{
+            background-color: var(--GhostWhite);
+            border: 1px solid var(--white);
+
+            p{
+                color: var(--NightBlue);
+            }
+
+            h4{
+                color: var(--Grey);
+            }
+
+            h3{
+                color: var(--Aqua);
+            }
+
+        }
+
+        .selected{
+            background-color: var(--white);
+        }
+    }
+}

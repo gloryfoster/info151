@@ -1,0 +1,30 @@
+@use "../helpers";
+
+#newsletter{
+
+    background-color: var(--LilyWhite);
+
+    h1{
+        color: var(--NightBlue);
+    }
+
+    p{
+        color: var(--Grey);
+    }
+
+    form{
+
+        input{
+            border: none;
+            color: var(--Grey);
+        }
+
+        button{
+            border: none;
+            background-color: var(--NightBlue);
+            color: var(--white);
+        }
+
+    }
+
+}
