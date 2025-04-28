@@ -335,6 +335,15 @@ html {
   width: 100%;
 }
 
+.content-padding {
+  padding: 40px 24px;
+}
+@media (min-width: 1200px) {
+  .content-padding {
+    padding: 100px 24px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -386,33 +395,91 @@ textarea {
 ============= */
 #hero {
   background-color: var(--LilyWhite);
+  padding: 56px 24px;
 }
-#hero section article p {
+@media (min-width: 1200px) {
+  #hero {
+    padding: 100px 24px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "hero-img" "hero-content";
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+        grid-template-areas: "hero-content hero-img";
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container section {
+    grid-area: hero-content;
+    padding: 0 15vw;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container section {
+    padding: 0;
+  }
+}
+#hero #hero-content-container section article p {
   color: var(--Grey);
   font-weight: 600;
   line-height: 1.75rem;
 }
-#hero section article a:link, #hero section article a:visited {
+#hero #hero-content-container section article a:link, #hero #hero-content-container section article a:visited {
   background-color: var(--NightBlue);
   color: var(--white);
   font-size: 0.875rem;
   font-weight: 600;
 }
-#hero section article button {
+#hero #hero-content-container section article button {
   background-color: var(--white);
 }
-#hero section #hero-card {
+#hero #hero-content-container section #hero-card {
   background-color: var(--Snowdrop);
 }
-#hero section #hero-card h5 {
+#hero #hero-content-container section #hero-card h5 {
   color: var(--NightBlue);
   font-weight: 600;
   line-size: 0.875rem;
 }
-#hero section #hero-card p {
+#hero #hero-content-container section #hero-card p {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container aside {
+    grid-area: hero-img;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  #hero #hero-content-container aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #hero #hero-content-container aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
 }
 
 #packages {
@@ -423,6 +490,25 @@ textarea {
 }
 #packages #package-button-container button {
   border: none;
+}
+@media (min-width: 768px) {
+  #packages #package-card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "card-1 card-1 card-2 card-2" "... card-3 card-3 ...";
+  }
+}
+@media (min-width: 1200px) {
+  #packages #package-card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    -ms-grid-columns: 1fr 45px 1fr 45px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "card-1 card-2 card-3";
+    gap: 45px;
+  }
 }
 #packages #package-card-container .package-card {
   background-color: var(--GhostWhite);
@@ -449,26 +535,115 @@ textarea {
 #packages #package-card-container .selected {
   background-color: var(--white);
 }
-
-#newsletter {
-  background-color: var(--LilyWhite);
+@media (min-width: 768px) {
+  #packages #package-card-container #card-1 {
+    grid-area: card-1;
+  }
 }
-#newsletter p {
+@media (min-width: 768px) {
+  #packages #package-card-container #card-2 {
+    grid-area: card-2;
+  }
+}
+@media (min-width: 768px) {
+  #packages #package-card-container #card-3 {
+    grid-area: card-3;
+  }
+}
+@media (min-width: 768px) {
+  #packages #package-card-container #card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #packages #package-card-container #card-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  #packages #package-card-container #card-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+}
+@media (min-width: 1200px) {
+  #packages #package-card-container #card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  #packages #package-card-container #card-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  #packages #package-card-container #card-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+  }
+}
+
+#newsletter #newsletter-content {
+  background-color: var(--LilyWhite);
+  padding: 60px 16px;
+}
+@media (min-width: 768px) {
+  #newsletter #newsletter-content {
+    padding: 60px 20vw;
+  }
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70% 74px auto;
+    grid-template-columns: 70% auto;
+    padding: 60px 16px;
+    gap: 74px;
+  }
+}
+@media (min-width: 1200px) {
+  #newsletter #newsletter-content {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+#newsletter #newsletter-content p {
   color: var(--Grey);
   font-weight: 600;
   line-height: 1.75rem;
+  margin: 16px 0;
 }
-#newsletter form input {
+#newsletter #newsletter-content form input {
   border: none;
   color: var(--Grey);
   font-weight: 600;
+  width: 100%;
+  padding: 24px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 16px;
 }
-#newsletter form button {
+#newsletter #newsletter-content form button {
   border: none;
   background-color: var(--NightBlue);
   color: var(--white);
   font-size: 0.875rem;
   font-weight: 600;
+}
+#newsletter #newsletter-content aside {
+  display: none;
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content aside {
+    display: block;
+  }
+}
+#newsletter #newsletter-content aside img {
+  margin-top: -120px;
 }
 
 #communications {

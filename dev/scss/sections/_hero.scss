@@ -2,50 +2,88 @@
 
 #hero{
     background-color: var(--LilyWhite);
+    padding: 56px 24px;
 
-    section{
-
-        article{
-            // h1{
-            //     color: var(--NightBlue);
-            //     font-size: helpers.rem-calc(50);
-            // }
-
-            p{
-                color: var(--Grey);
-                font-weight: 600;
-                line-height: helpers.rem-calc(28);
-            }
-
-            a:link, a:visited{
-                background-color: var(--NightBlue);
-                color: var(--white);
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
-            }
-            a:hover, a:focus{
-
-            }
-
-            button{
-                background-color: var(--white);
-            }
-        }
-
-        #hero-card{
-            background-color: var(--Snowdrop);
-            h5{
-                color: var(--NightBlue);
-                font-weight: 600;
-                line-size: helpers.rem-calc(14);
-            }
-            p{
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
-                line-height: helpers.rem-calc(24);
-            }
-        }
-
+    @include helpers.xl{
+        padding: 100px 24px;
     }
+
+    #hero-content-container{
+
+        @include helpers.md{
+            display: grid;
+            grid-template-areas: "hero-img"
+                                "hero-content";
+        }
+    
+        @include helpers.xl{
+            grid-template-columns: 40% auto;
+            grid-template-areas: "hero-content hero-img";
+    
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section{
+            @include helpers.md{
+                grid-area: hero-content;
+                padding: 0 15vw;
+            }
+    
+            @include helpers.xl{
+                padding: 0;
+            }
+    
+            article{
+                // h1{
+                //     color: var(--NightBlue);
+                //     font-size: helpers.rem-calc(50);
+                // }
+    
+                p{
+                    color: var(--Grey);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(28);
+                }
+    
+                a:link, a:visited{
+                    background-color: var(--NightBlue);
+                    color: var(--white);
+                    font-size: helpers.rem-calc(14);
+                    font-weight: 600;
+                }
+                a:hover, a:focus{
+    
+                }
+    
+                button{
+                    background-color: var(--white);
+                }
+            }
+    
+            #hero-card{
+                background-color: var(--Snowdrop);
+                h5{
+                    color: var(--NightBlue);
+                    font-weight: 600;
+                    line-size: helpers.rem-calc(14);
+                }
+                p{
+                    font-size: helpers.rem-calc(14);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(24);
+                }
+            }
+    
+        }
+    
+        aside{
+            @include helpers.md{
+                grid-area: hero-img;
+            }
+    
+        }
+    }
+    
 }
 
