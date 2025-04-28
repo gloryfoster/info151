@@ -3,16 +3,60 @@
 #process{
     background-color: var(--white);
 
-    h3{
-        color: var(--NightBlue);
-        font-weight: 600;
-        font-size: helpers.rem-calc(24);
-        line-height: helpers.rem-calc(34);
+    h1{
+        padding: 5px 35vw;
     }
-    p{
-        color: var(--Grey);
-        font-weight: 600;
-        font-size: helpers.rem-calc(16);
-        line-height: helpers.rem-calc(28);
+
+    #process-card-container{
+
+        @include helpers.md{
+            display: grid;
+            padding: 5px 10vw;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: "card-1 card-1"
+                                 "card-2 card-2"
+                                 "card-3 card-3";
+        }
+
+        @include helpers.lg{
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "card-1 card-2 card-3";
+            gap: 45px;
+        }
+
+        h3{
+            color: var(--NightBlue);
+            font-weight: 600;
+            font-size: helpers.rem-calc(24);
+            line-height: helpers.rem-calc(34);
+        }
+
+        p{
+            color: var(--Grey);
+            font-weight: 600;
+            font-size: helpers.rem-calc(16);
+            line-height: helpers.rem-calc(28);
+        }
+
+        #card-1{
+            @include helpers.md{
+                grid-area: card-1;
+            }
+        }
+
+        #card-2{
+            @include helpers.md{
+                grid-area: card-2;
+            }
+        }
+
+        #card-3{
+            @include helpers.md{
+                grid-area: card-3;
+            }
+        }
     }
+    
 }
