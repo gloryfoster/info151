@@ -4,6 +4,12 @@
     background-color: var(--white);
 
     #about-content-container{
+        ul{
+            list-style-type: none;
+        }
+        li{
+            list-style-type: none;
+        }
 
         @include helpers.md{
             display: grid;
@@ -28,6 +34,19 @@
     
             @include helpers.xl{
                 padding: 0;
+            }
+
+            .about-sections{
+                display: flex;
+                align-items: center;
+
+                .about-icons{
+                    margin-left: -20px;
+                }
+
+                .about-text{
+                    margin-left: 30px;
+                }
             }
     
             h3{

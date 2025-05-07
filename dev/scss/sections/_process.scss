@@ -8,6 +8,12 @@
     }
 
     #process-card-container{
+        ul{
+            list-style-type: none;
+        }
+        li{
+            list-style-type: none;
+        }
 
         @include helpers.md{
             display: grid;

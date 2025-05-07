@@ -2,6 +2,8 @@
 
 #newsletter{
 
+    margin-bottom: 100px;
+
     #newsletter-content{
         background-color: var(--LilyWhite);
         padding: 60px 16px;
@@ -18,53 +20,70 @@
         }
 
         @include helpers.xl{
+            grid-template-columns: 65% auto;
             width: 1200px;
             margin: 0 auto;
         }
 
-    // h1{
-    //     color: var(--NightBlue);
-    // }
+        #newsletter-left{
 
-        p{
-            color: var(--Grey);
-            font-weight: 600;
-            line-height: helpers.rem-calc(28);
-            margin: 16px 0;
-        }
+            @include helpers.lg{
+                padding: 60px 0px 60px 60px;
+            }
 
-        form{
-
-            input{
-                border: none;
+            p{
                 color: var(--Grey);
                 font-weight: 600;
-                width: 100%;
-                padding: 24px 8px;
-                box-sizing: border-box;
-                border-radius: 8px;
-                margin-bottom: 16px;
+                line-height: helpers.rem-calc(28);
+                margin: 16px 0;
             }
+    
+            form{
+                
+                @include helpers.md{
+                    display: flex;
+                    passing: 12px 8px;
+                    background-color: var(--white);
+                    border-radius: 8px;
+                }
+                
+                input{
+                    border: none;
+                    color: var(--Grey);
+                    font-weight: 600;
+                    width: 100%;
+                    padding: 24px 8px;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
 
-            button{
-                border: none;
-                background-color: var(--NightBlue);
-                color: var(--white);
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
+                    @include helpers.md{
+                        margin-bottom: 0;
+                    }
+                }
+    
+                .nightBlue-btn{
+                    border: none;
+                    background-color: var(--NightBlue);
+                    color: var(--white);
+                    font-size: helpers.rem-calc(14);
+                    font-weight: 600;
+                }
+    
             }
-
         }
+
 
         aside{
             display: none;
 
             @include helpers.lg{
                 display: block;
+                margin-top: -50px;
             }
 
             img{
-                margin-top: -120px;
+                //margin-top: -120px;
             }
         }
     }
