@@ -1,0 +1,89 @@
+@use "../helpers";
+
+.img-scaler{
+    width: 100%
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.section-title{
+    color: var(--DarkPurple);
+    font-size: helpers.rem-calc(50);
+    line-height: helpers.rem-calc(65);
+
+    span{
+        position: relative;
+
+    }
+}
+
+.button{
+
+
+
+}
+
+:root {
+    --Black: #000000;
+    --White: #ffffff;
+    --LilyWhite: #ECF9FF;
+    --MintBlue: #78ffe2;
+    --DarkerMint: #21d1ab;
+    --DarkPurple: #1b0038;
+    --SkyBlue: #abebff;
+}
+
+#index{
+    background-color: var(--SkyBlue);
+
+    article{
+        background-color: var(--MintBlue);
+    }
+}
+
+#about{
+    background-color: var(--SkyBlue);
+
+    article{
+        background-color: var(--MintBlue);
+    }
+
+}
+
+#resume{
+    background-color: var(--SkyBlue);
+
+    article{
+        background-color: var(--MintBlue);
+    }
+
+}
+
+#projects{
+    background-color: var(--SkyBlue);
+
+    article{
+        background-color: var(--MintBlue);
+    }
+
+}
+
+#associations{
+    background-color: var(--SkyBlue);
+
+    article{
+        background-color: var(--MintBlue);
+    }
+
+}
+
+#contact{
+    background-color: var(--SkyBlue);
+
+    article{
+        background-color: var(--MintBlue);
+    }
+
+}
