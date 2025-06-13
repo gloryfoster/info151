@@ -38,8 +38,27 @@ body{
 #index{
     background-color: var(--SkyBlue);
 
+    @include helpers.md{
+        display: grid;
+        grid-template-areas: "hero-img"
+                            "hero-content";
+    }
+
     article{
         background-color: var(--MintBlue);
+    }
+
+    #indexContent{
+        @include helpers.md{
+            grid-area: index-content;
+            padding: 0 15vw;
+        }
+    }
+
+    aside{
+        @include helpers.md{
+            grid-area: index-img;
+        }
     }
 }
 
