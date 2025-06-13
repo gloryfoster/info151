@@ -39,8 +39,8 @@ body{
     background-color: var(--SkyBlue);
 
     display: grid;
-    grid-template-areas: "hero-img"
-                        "hero-content";
+    grid-template-areas: "index-img"
+                        "index-content";
 
     article{
         background-color: var(--MintBlue);
