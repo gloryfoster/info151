@@ -50,6 +50,11 @@ body{
     article{
         background-color: var(--MintBlue);
     }
+
+    #index-content{
+        flex: 1;
+        margin: 50px;
+    }
 }
 
 #about{
