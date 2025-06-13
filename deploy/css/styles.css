@@ -39,8 +39,7 @@ body{
     background-color: var(--SkyBlue);
 
     display: grid;
-    grid-template-areas: "index-img"
-                        "index-content";
+    grid-template-areas: 2fr 1fr;
 
     article{
         background-color: var(--MintBlue);
@@ -53,6 +52,9 @@ body{
 
     aside{
         grid-area: index-img;
+        img{
+
+        }
     }
 }
 
