@@ -1,20 +1,15 @@
 @use "../helpers";
 
-background-color: var(--SkyBlue);
-
 body{
     font-family: "Open Sans", sans-serif;
 }
 
 .section-title{
     color: var(--DarkPurple);
-    font-size: helpers.rem-calc(50);
+    font-size: helpers.rem-calc(70);
     line-height: helpers.rem-calc(65);
 
-    span{
-        position: relative;
-
-    }
+    text-align: center;
 }
 
 .button{
@@ -25,6 +20,7 @@ body{
 }
 
 :root {
+    background-color: var(--SkyBlue);
     --Black: #000000;
     --White: #ffffff;
     --LilyWhite: #ECF9FF;
