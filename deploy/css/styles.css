@@ -53,7 +53,8 @@ body{
     aside{
         grid-area: index-img;
         img{
-
+            width: 200px;
+            height: 400px;
         }
     }
 }
