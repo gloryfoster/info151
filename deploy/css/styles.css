@@ -42,8 +42,9 @@ body{
     }
 
     .index-image{
-        max-width: 33vw;
+        max-width: 25vw;
         height: auto;
+        margin: 50px;
         display: block;
     }
 
@@ -87,8 +88,23 @@ body{
 #associations{
     background-color: var(--SkyBlue);
 
+    .associations-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .associations-image{
+        max-width: 20vw;
+        height: auto;
+        margin: 50px;
+        display: block;
+    }
+
     article{
         background-color: var(--MintBlue);
+        margin: 50px;
     }
 
 }
