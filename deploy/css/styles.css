@@ -30,6 +30,37 @@ body{
     --SkyBlue: #abebff;
 }
 
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    width: 32px;
+    height: 28px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.mobile-menu .bar{
+    height:10px;
+    width:100%;
+    background:var(--DarkerMint);
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu{
+        display: flex;
+    }
+
+    #main-nav{
+        display: none;
+        flex-direction: column;
+    }
+
+    #main-nav.active{
+        display: flex;
+    }
+}
+
 #index{
     background-color: var(--SkyBlue);
 
