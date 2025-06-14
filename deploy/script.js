@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+window.onload = function() {
     const images = document.querySelectorAll('.associations-img');
 
     function checkImages() {
@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
         images.forEach(img => {
             const imgTop = img.getBoundingClientRect().top;
             if (imgTop < windowTrigger) {
-                img.classList.add('.visible');
+                img.classList.add('visible');
             }
         });
     };
 
     window.addEventListener('scroll', checkImages);
     checkImages();
-});
+};
