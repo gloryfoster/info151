@@ -145,10 +145,22 @@ body{
     }
 
     .associations-image{
+        opacity: 0;
+        transform: translateX(100px);
+        transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
         max-width: 20vw;
         height: auto;
         margin: 50px;
         display: block;
+
+        @media (max-width: 768px) {
+            max-width: 40vw;
+        }
+    }
+
+    .associations-image.visible{
+        opacity: 1;
+        transform: translateX(0);
     }
 
     article{
