@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+console.log('script.js loaded');
 window.onload = function() {
     const images = document.querySelectorAll('.associations-img');
-
+    console.log('Images found:', images.length);
     function checkImages() {
+        console.log('Checking images on scroll');
         const windowTrigger = window.innerHeight * 0.9;
         images.forEach(img => {
             const imgTop = img.getBoundingClientRect().top;
