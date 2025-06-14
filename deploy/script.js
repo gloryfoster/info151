@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 console.log('script.js loaded');
 window.onload = function() {
-    const images = document.querySelectorAll('.associations-img');
+    const images = document.querySelectorAll('.associations-image');
     console.log('Images found:', images.length);
     function checkImages() {
         console.log('Checking images on scroll');
