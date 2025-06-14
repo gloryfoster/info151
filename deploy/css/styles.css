@@ -151,7 +151,6 @@ body{
         max-width: 20vw;
         height: auto;
         margin: 50px;
-        display: block;
 
         @media (max-width: 768px) {
             max-width: 40vw;
