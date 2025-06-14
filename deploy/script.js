@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         images.forEach(img => {
             const imgTop = img.getBoundingClientRect().top;
             if (imgTop < windowTrigger) {
-                img.classList.add('visible');
+                img.classList.add('.visible');
             }
         });
     };
